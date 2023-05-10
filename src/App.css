@@ -1,38 +1,123 @@
-.App {
-  text-align: center;
+body {
+  background-color: rgb(0, 6, 46);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+a {
+  text-decoration: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar {
+  background-color: rgb(0, 6, 46);
+  position: sticky;
+  top: 0;
+  padding: 20px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between;
+  background-image: url("../public/cinta-películas-recortado.png");
+}
+
+#logo {
+  font-size: x-large;
+  border-width: 2px;
+  border-style: double;
+  border-radius: 10%;
+  padding: 10px;
+  background-color: grey;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.sidebar {
+  position: fixed;
+  top: 1;
+  left: 0;
+  width: 180px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(2, 28, 222);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.content {
+  margin-left: 200px;
+  padding: 25px;
+  color: white;
+}
+
+.login-button {
+  margin: 20px;
+  border-width: 2px;
+  border-style: double;
+  border-radius: 10%;
+  padding: 10px;
+  background-color: green;
+  color: white;
+}
+
+#username {
+  background-color: grey;
+  color: white;
+}
+
+.login-button:active {
+  background-color: darkgreen;
+}
+
+.logout-button {
+  margin: 20px;
+  border-width: 2px;
+  border-style: double;
+  border-radius: 10%;
+  padding: 10px;
+  background-color: black;
+  color: white;
+}
+
+.signup-button {
+  margin: 20px;
+  border-width: 2px;
+  border-style: double;
+  border-radius: 10%;
+  padding: 10px;
+  background-color: lightblue;
+  color: black;
+}
+
+.signup-button:active {
+  background-color: rgb(117, 146, 156);
+}
+
+.sidebar-buttons {
+  margin: 20px;
+  border-width: 2px;
+  border-style: double;
+  border-radius: 10%;
+  padding: 10px;
+  width: fit-content;
+  background-color: rgb(0, 6, 46);
+  color: white;
+  text-align: center;
+}
+
+.sidebar-buttons:hover {
+  box-shadow: 5px 5px 5px black;
+}
+
+.results-card {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(2, 28, 222);
+}
+
+.results-card:active {
+  background-color: rgb(2, 28, 222);
+}
+
+#movie-series-title {
+  font-size: x-large;
+  display: flex;
+justify-content: center;
 }
